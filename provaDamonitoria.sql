@@ -32,7 +32,7 @@ create table pedidos (
 create table PedidosProdutos (
     FK_id_produto varchar(5),
     FK_id_pedido varchar(5),
-    quantidade double,
+    quantidade int,
     foreign key(FK_id_pedido) references pedidos(id_pedido),
     foreign key(FK_id_produto) references produtos(id_produto),
     primary key (FK_id_produto, FK_id_pedido)
