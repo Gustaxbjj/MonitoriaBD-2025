@@ -21,3 +21,4 @@ insert into pedidos(id_pedido,data,valor,FK_id_cliente )values
 insert into PedidosProdutos(FK_id_produto,FK_id_pedido,quantidade )values
 ('44444','00000', '2')
 
+	
