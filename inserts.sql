@@ -10,7 +10,7 @@ insert into produtos(id_produto,nome,preco,FK_id_categoria)values
 
 insert into clientes(id_cliente,nome,cidade)values
 ('77777','david','maceio'),
-('88888','talys', 'rio largo'),
+('88888','Talys', 'rio largo'),
 ('99999','adonai','flexeiras');
 
 insert into pedidos(id_pedido,data,valor,FK_id_cliente )values
