@@ -22,7 +22,7 @@ create table clientes (
 );
 
 create table pedidos (
-    id_pedido varchar(5) primary key,
+    id_pedido varchar(5) key,
     data date,
     valor double,
     FK_id_cliente varchar(5),
