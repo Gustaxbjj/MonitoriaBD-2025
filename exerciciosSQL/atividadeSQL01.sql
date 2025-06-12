@@ -24,16 +24,16 @@ nome varchar(50)
 create table consultas(
 id int primary key,
 data date,
-hora time
+hora time,
+FK_id_paciente int,
+FK_id_medicos int,
+foreign key(FK_id_paciente) references paciente(id),
+foreign key(FK_id_medicos) references medicos(id)
 );
 
 create table especialidades(
 id int primary key,
 nome varchar(50),
-FK_id_paciente int,
-FK_id_medicos int,
-foreign key(FK_id_paciente) references paciente(id),
-foreign key(FK_id_medicos) references medicos(id)
 );
 
 create table medicosEspecialidades(
