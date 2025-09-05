@@ -1,3 +1,6 @@
+CREATE DATABASE escola;
+use escola;
+
 CREATE TABLE alunos (
 	id SERIAL PRIMARY KEY,
   	nome VARCHAR(100) NOT NULL,
